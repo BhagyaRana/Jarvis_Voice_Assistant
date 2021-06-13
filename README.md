@@ -36,10 +36,12 @@ pip install pyjokes
 
 ✔️ It can Open any Application like Notepad, Command Prompt, Visual Studio Code, YouTube in Chrome and any Possible Application once you understand the Logic.
 
+```
 -🎤 "open notepad"
 -🎤 "open command prompt"
 -🎤 "open code"
 -🎤 "open youtube"
+```
 
 + 2) Play Music or Particular Music
 
