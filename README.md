@@ -32,123 +32,123 @@ pip install pyjokes
 
 ### ✨ All Task that Can be Performed by Jarvis
 
-- 1) Open any Application
++ 1) Open any Application
 
 ✔️ It can Open any Application like Notepad, Command Prompt, Visual Studio Code, YouTube in Chrome and any Possible Application once you understand the Logic.
 
-🎤 "open notepad"
-🎤 "open command prompt"
-🎤 "open code"
-🎤 "open youtube"
+-🎤 "open notepad"
+-🎤 "open command prompt"
+-🎤 "open code"
+-🎤 "open youtube"
 
-- 2) Play Music or Particular Music
++ 2) Play Music or Particular Music
 
 ✔️ It can Play Random or Specific Music on YouTube [Can also be Modified for Local Music Files] 
 
-🎤 "play music"
-🎤 "play mozart"
+-🎤 "play music"
+-🎤 "play mozart"
 
-- 3) Increase / Decrease the Speakers Volume
++ 3) Increase / Decrease the Speakers Volume
 
 ✔️ It can Change [increase, decrease or mute] the System Volume 
 
-🎤 "volume up"
-🎤 "volume down"
-🎤 "volume mute"
+-🎤 "volume up"
+-🎤 "volume down"
+-🎤 "volume mute"
 
-- 4) Opens any System App [For Eg: Calculator]
++ 4) Opens any System App [For Eg: Calculator]
 
 ✔️ For Example, Calculator can be Opened using Below Command. It can be Modified for Any System Apps.
 
-🎤 "open calculator"
+-🎤 "open calculator"
 
-- 5) Tells about something, by searching on the internet
++ 5) Tells about something, by searching on the internet
 
 ✔️ It Opens Google in Chrome and Ask User for Search Query, Get Information about Particular Person, & search in Wikipedia.
 
-🎤 "open google"
-🎤 "who is"
-🎤 "wikipedia"
+-🎤 "open google"
+-🎤 "who is"
+-🎤 "wikipedia"
 
-- 6) Tells the weather for a place
++ 6) Tells the weather for a place
 
 ✔️ Using Openweather API, We can get the Temperature and Description of Climate of Particular City.
 
-🎤 "weather"
+-🎤 "weather"
 
-- 7) Tells the current time and date
++ 7) Tells the current time and date
 
 ✔️ It can tell the Current Time and Date to User
 
-🎤 "time"
-🎤 "date"
+-🎤 "time"
+-🎤 "date"
 
-- 8) Set an Alarm
++ 8) Set an Alarm
 
 ✔️ Set an Alarm for User [Still in Development]
 
-🎤 "alarm"
+-🎤 "alarm"
 
-- 9) Tell the Internet Speed
++ 9) Tell the Internet Speed
 
 ✔️ Tells the Download and Upload Speed in MBPS
 
-🎤 "internet speed"
+-🎤 "internet speed"
 
-- 10) Internet Connection
++ 10) Internet Connection
 
 ✔️ Check if you're Connected to Internet
 
-🎤 "internet connection"
+-🎤 "internet connection"
 
-- 11) Daily News
++ 11) Daily News
 
 ✔️ Speaks Out Daily News from News API
 
-🎤 "news"
+-🎤 "news"
 
-- 12) Spell a Particular Word
++ 12) Spell a Particular Word
 
 ✔️ For Example, computer -> "c o m p u t e r"
 
-🎤 "spell"
+-🎤 "spell"
 
-- 13) How much Memory Consumed
++ 13) How much Memory Consumed
 
 ✔️ Tells How much Memory is Used in this Processes
 
-🎤 "memory" 
+-🎤 "memory" 
 
-- 14) Calculate
++ 14) Calculate
 
 ✔️ Helps to Do some Small Handy Calculations
 
-🎤 "calculate"
+-🎤 "calculate"
 
-- 15) Help
++ 15) Help
 
 ✔️ Tells all the Task that can be Performed using JARVIS
 
-🎤 "help"
+-🎤 "help"
 
-- 16) Jokes
++ 16) Jokes
 
 ✔️ It randomly Generates Jokes to the User
 
-🎤 "jokes"
+-🎤 "jokes"
 
-- 17) Author
++ 17) Author
 
 ✔️ It Tells the Person who Made JARVIS [Inspired from ROBOT Movie]
 
-🎤 "who made you"
-🎤 "who created you"
+-🎤 "who made you"
+-🎤 "who created you"
 
-- 18) exit
++ 18) exit
 
 ✔️ To Exit the Voice Assistant
 
-🎤 "exit"
+-🎤 "exit"
 
 ## 🤝 Contributing
 
