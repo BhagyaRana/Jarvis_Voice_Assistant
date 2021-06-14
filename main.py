@@ -50,6 +50,8 @@ import urllib.request
 import psutil
 # For Jokes
 import pyjokes
+# For Delay
+import time
 
 # Voice Initialization Part for Jarvis
 
@@ -68,6 +70,7 @@ def speak(text):
 # Function to Take Command [Voice] From User and Convert to text
 def take_command():
     r = sr.Recognizer()
+    # time.sleep(5)
     with sr.Microphone() as source:
         print("listening...[1 sec Delay]")
         # So Jarvis, Doesn't Leave the Command in Middle
@@ -104,10 +107,11 @@ def connect(host='https://www.google.com/'):
 # Function to Read News
 def News():
     # Change the API_KEY to your One
+
     query_params = {
         "source": "bbc-news",
         "sortBy": "top",
-        "apiKey": "9c3520f8214647ea9f940f2fba914af4"
+        "apiKey": "YOUR_API_KEY_HERE"
     }
     main_url = " https://newsapi.org/v1/articles"
     res = requests.get(main_url, params=query_params)
@@ -121,22 +125,37 @@ def News():
         speak(results[i])
 
 # Function for Calculations
-def get_operator(op):
-    return{
-        '+': operator.add(),
-        '-': operator.sub(),
-        'x': operator.mul(),
-        'divided': operator.__truediv__(),
-        'mod': operator.mod(),
-        }[op]
+# def get_operator(op):
+#     return{
+#         '+': operator.add(),
+#         '-': operator.sub(),
+#         'x': operator.mul(),
+#         'divided': operator.__truediv__(),
+#         'mod': operator.mod(),
+#         }[op]
 
 def evaluate(op1, operation, op2):
-    op1, op2 = int(op1), int(op2)
-    return get_operator(operation)(op1, op2)
+    op1 = int(op1)
+    op2 = int(op2)
+    if(operation == '+'):
+        return op1+op2
+    elif(operation == '-'):
+        return op1-op2
+    elif (operation == 'multiply'):
+        return op1*op2
+    elif (operation == "divide"):
+        if(op2!=0):
+            return op1/op2
+        else:
+            speak("Divide by Zero Error")
+            return -1
+
+    # return get_operator(operation)(op1, op2)
 
 if __name__ == "__main__":
     greet()
     while True:
+
         query = take_command().lower()
 
         # All Task that Can be Performed by Jarvis
@@ -202,7 +221,7 @@ if __name__ == "__main__":
         #6) Tells the weather for a place
         elif 'weather' in query:
             # This is my API KEY, Change it to Yours
-            api_key = "5856c1223d99712ff64cb08c2512b2a3"
+            api_key = "YOUR_WEATHER_API_KEY_HERE"
             base_url = "http://api.openweathermap.org/data/2.5/weather?"
             speak("Sir, For Which Place you want to know the Weather?")
             place = take_command().lower()
@@ -236,9 +255,9 @@ if __name__ == "__main__":
 
         #8) Set an Alarm
         elif 'alarm' in query:
-            speak("Sir, Please tell me the time to set the alarm, Example - set alarm to 6:30 am")
+            speak("Sir, Please tell me the time to set the alarm, Example - set alarm for 6:30 am")
             res = take_command().lower()
-            res = res.replace('set alarm to', '')
+            res = res.replace('set alarm for', '')
             res = res.replace('.', '')
             res = res.upper()
             print(res)
@@ -287,8 +306,8 @@ if __name__ == "__main__":
         elif 'calculate' in query:
             speak("What do you want to calculate? Example : 5 plus 10")
             res = take_command().lower()
-            msg6 = evaluate(*(res.split()))
-            t7 = "Your Result is " + msg6
+            msg6 = evaluate(*(res.split(" ")))
+            t7 = "Your Result is " + str(msg6)
             print(t7)
             speak(t7)
 
