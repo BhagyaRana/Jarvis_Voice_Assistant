@@ -12,8 +12,7 @@
 
 ## 📹 Video Demonstration
 
-<iframe src="https://player.vimeo.com/video/562670975" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-<p><a href="https://vimeo.com/562670975">JARVIS_VIDEO_DEMONSTRATION_EDITED.mp4</a> from <a href="https://vimeo.com/user142779153">Bhagya Rana</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<p align="center"><a href="https://vimeo.com/562670975">LIVE DEMO LINK</a></p>
 
 ## 🤔 Required Packages
 
